@@ -30,35 +30,35 @@ def part2(inputfile):
                 first_digit = item[x]
                 #print('is digit!')
                 break
-            elif item[x] == 'o' and item[x+1] == 'n' and item[x+2] == 'e':
+            elif x+2 <= len(item) and item[x:x+3] == 'one':
                 first_digit = 1
                 break 
-            elif item[x] == 't' and item[x+1] == 'w' and item[x+2] == 'o':
+            elif x+2 <= len(item) and item[x:x+3] == 'two':
                 first_digit = 2
                 #print('did it!')
                 break
-            elif item[x] == 't' and item[x+1] == 'h' and item[x+2] == 'r' and item[x+3] == 'e' and item[x+4] == 'e':
+            elif x+4 <= len(item) and item[x:x+5] == 'three':
                 first_digit = 3
                 break 
-            elif item[x] == 'f' and item[x+1] == 'o' and item[x+2] == 'u' and item[x+3] == 'r':
+            elif x+3 <= len(item) and item[x:x+4] == 'four':
                 first_digit = 4
                 break 
-            elif item[x] == 'f' and item[x+1] == 'i' and item[x+2] == 'v' and item[x+3] == 'e':
+            elif x+3 <= len(item) and item[x:x+4] == 'five':
                 first_digit = 5
                 break 
-            elif item[x] == 's' and item[x+1] == 'i' and item[x+2] == 'x':
+            elif x+2 <= len(item) and item[x:x+3] == 'six':
                 first_digit = 6
                 break 
-            elif item[x] == 's' and item[x+1] == 'e' and item[x+2] == 'v' and item[x+3] == 'e' and item[x+4] == 'n':
+            elif x+4 <= len(item) and item[x:x+5] == 'seven':
                 first_digit = 7
                 break
-            elif item[x] == 'e' and item[x+1] == 'i' and item[x+2] == 'g' and item[x+3] == 'h' and item[x+4] == 't':
+            elif x+4 <= len(item) and item[x:x+5] == 'eight':
                 first_digit = 8
                 break
-            elif item[x] == 'n' and item[x+1] == 'i' and item[x+2] == 'n' and item[x+3] == 'e':
+            elif x+2 <= len(item) and item[x:x+4] == 'nine':
                 first_digit = 9
                 break 
-            elif item[x] == 'z' and item[x+1] == 'e' and item[x+2] == 'r' and item[x+3] == 'o':
+            elif x+3 <= len(item) and item[x:x+4] == 'zero':
                 first_digit = 0
                 break 
         #print('first_digit = ' + str(first_digit))
@@ -69,25 +69,25 @@ def part2(inputfile):
             if item[x].isdigit():
                 last_digit = item[x]
                 #print('is digit!')
-            elif x+2 <= len(item) and item[x] == 'o' and item[x+1] == 'n' and item[x+2] == 'e':
+            elif x+2 <= len(item) and item[x:x+3] == 'one':
                 last_digit = 1
-            elif x+2 <= len(item) and item[x] == 't' and item[x+1] == 'w' and item[x+2] == 'o':
+            elif x+2 <= len(item) and item[x:x+3] == 'two':
                 last_digit = 2
-            elif x+4 <= len(item) and item[x] == 't' and item[x+1] == 'h' and item[x+2] == 'r' and item[x+3] == 'e' and item[x+4] == 'e':
+            elif x+4 <= len(item) and item[x:x+5] == 'three':
                 last_digit = 3
-            elif x+3 <= len(item) and item[x] == 'f' and item[x+1] == 'o' and item[x+2] == 'u' and item[x+3] == 'r':
+            elif x+3 <= len(item) and item[x:x+4] == 'four':
                 last_digit = 4
-            elif x+3 <= len(item) and item[x] == 'f' and item[x+1] == 'i' and item[x+2] == 'v' and item[x+3] == 'e':
+            elif x+3 <= len(item) and item[x:x+4] == 'five':
                 last_digit = 5
-            elif x+2 <= len(item) and item[x] == 's' and item[x+1] == 'i' and item[x+2] == 'x':
+            elif x+2 <= len(item) and item[x:x+3] == 'six':
                 last_digit = 6
-            elif x+4 <= len(item) and item[x] == 's' and item[x+1] == 'e' and item[x+2] == 'v' and item[x+3] == 'e' and item[x+4] == 'n':
+            elif x+4 <= len(item) and item[x:x+5] == 'seven':
                 last_digit = 7
-            elif x+4 <= len(item) and item[x] == 'e' and item[x+1] == 'i' and item[x+2] == 'g' and item[x+3] == 'h' and item[x+4] == 't':
+            elif x+4 <= len(item) and item[x:x+5] == 'eight':
                 last_digit = 8
-            elif x+2 <= len(item) and item[x] == 'n' and item[x+1] == 'i' and item[x+2] == 'n' and item[x+3] == 'e':
+            elif x+2 <= len(item) and item[x:x+4] == 'nine':
                 last_digit = 9
-            elif x+3 <= len(item) and item[x] == 'z' and item[x+1] == 'e' and item[x+2] == 'r' and item[x+3] == 'o':
+            elif x+3 <= len(item) and item[x:x+4] == 'zero':
                 last_digit = 0
         #print('last_digit = ' + str(last_digit))
 
