@@ -19,7 +19,7 @@ def part2(inputfile):
     answer = 0
     with open(inputfile,'r') as f:
         lines = f.read().split("\n")
-    print(lines)
+    #print(lines)
     for item in lines:
         #print(item)
         first_digit = 0
@@ -99,6 +99,7 @@ def part2(inputfile):
 
 print("Part 1 test case 1 answer = ", part1('day01input-testcase1.txt'))
 print("Part 1 answer = ", part1('day01input.txt'))
-#Correct on first attempt!   67016
+#Correct on first attempt!   54877
 print("Part 2 test case 1 answer = ", part2('day01input-part2-testcase1.txt'))
 print("Part 2 answer = ", part2('day01input.txt'))
+#Correct on first attempt!   54100
